@@ -15,7 +15,7 @@ public class UserController {
     public List<?> getUsers(){
         RestTemplate restTemplate = new RestTemplate();
         String endpointUrl = "https://dummyjson.com/users";
-        List<?> users = restTemplate.getForObject(endpointUrl, List.class);
+        List<Map<String, Object>> users = restTemplate.getForObject(endpointUrl, List.class);
         return users;
     }
 
