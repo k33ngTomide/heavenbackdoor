@@ -22,6 +22,7 @@ public class UserController {
     @GetMapping("/check")
     public String testEnd(){
         return "This is to prove to you that the backend is working fine";
+
     }
 
 }
